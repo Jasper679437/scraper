@@ -29,7 +29,7 @@ export class TwseScraperService implements OnApplicationBootstrap {
         const rows = $('.h4 tr');
 
         //each table rows convert data strusture
-        
+
         const data = rows.slice(1).map((i, el) =>{
             const td = $(el).find('td');
             return{
@@ -40,7 +40,7 @@ export class TwseScraperService implements OnApplicationBootstrap {
             };
         }).toArray();
 
-        return data;
+        return data; 
     }
 }
 
